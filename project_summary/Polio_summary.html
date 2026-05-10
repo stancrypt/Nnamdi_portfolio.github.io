@@ -12,79 +12,57 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-    <h1>Salary, Job Satisfaction & AI Threat Perception Analysis</h1>
-    <p style="font-size: 24px;">This project involved conducting an end-to-end statistical analysis of global 
-        Developers’ survey data using R to explore the relationship between work experience, salary, 
-        job satisfaction, education level, and perceptions of AI as a threat to developers.
-        Using data cleaning, exploratory data analysis, hypothesis testing, correlation analysis, regression 
-        modeling, and data visualization techniques, the project identified key factors influencing 
-        annual compensation and workplace satisfaction among professional developers.</p>
-    <p style="font-size: 24px;"> The project was also geared towards To predicting the annual salary 
-        using years of experience, education level, job satisfaction, and age.</p>
-        <h2>Key Activities Performed</h2>
-        <ol style="font-size: 24px;">
-            <li>Cleaned and transformed raw survey data using dplyr, tidyr, and readxl</li>
-            <li>Filtered and analyzed responses from professional developers only</li>
-            <li>Conducted descriptive statistical analysis on:</li>
-            <dd>Work experience</dd>
-            <dd>Annual compensation</dd>
-            <dd>Job satisfaction</dd>
-            <dd>Education level</dd>
-            <li>Performed missing value analysis and data preprocessing</li>
-            <li>Executed hypothesis testing using t-tests to examine differences in salary based on AI threat perception</li>
-            <li>Conducted Spearman correlation analysis to evaluate relationships between salary and job satisfaction</li>
-            <li>Built:</li>
-            <dd>Simple Linear Regression Model to predict salary from work experience</dd>
-            <dd>Multiple Linear Regression Model using work experience, education level, age, and job satisfaction</dd>
-            <dd>Logistic Regression Model to analyze factors influencing perceptions of AI threat</dd>
-            <li>Visualized relationships between experience and salary using ggplot2</li>
-            <li>Compared model performance using the performance package</li>
-        </ol>
-        
-        <h1>Project Results</h1>
-        <a href="#" class="image fit"><img src="Model_output_1.jpg" alt="" /></a>
-        <p style="font-size: 24px;">Using ConvertedCompYearly, WorkExp variables, I created the first model. This model examines 
-            how years of experience predict salary. It assumes a linear relationship: more experience 
-            higher salary. This simple linear regression model was developed to examine the effect of years 
-            of professional experience on annual salary. The results indicate whether experience significantly 
-            predicts income levels among respondents.
-            <br>The dots represent individual respondents and the line shows the regression trend which 
-            helps visually confirm whether the relationship is positive or negative as well the data is widely 
-            spread or closely clustered. A scatter plot with a fitted regression line was created to visualize 
-            the relationship between years of experience and annual salary. The upward trend of the regression 
-            line suggests a positive relationship, indicating that individuals with more experience tend to earn 
-            higher salaries.</p>
-        <a href="#" class="image fit"><img src="sum_gl_1.jpg" alt="" /></a>
-        <br>
-        <a href="#" class="image fit"><img src="sum_gl_3.png" alt="" /></a>
-        <p style="font-size: 24px;">Based on the metrics in the table above, the two linear models (model1 and model2) exhibit extremely 
-            low explanatory power, with R-squared values of 0.0059 and 0.0094, respectively. 
-            This means that less than 1% of the variance in the outcome variable is accounted for by the 
-            predictors in either model which is a negligible effect in practical terms. While model2 technically 
-            has a slightly higher R-squared than model1, this marginal difference is substantively meaningless. 
-            The glm_model reports “NA” for R-squared, which is expected for 
-            generalized linear models (e.g., logistic, Poisson, or Gamma regression) where traditional R² is not 
-            directly applicable; alternative pseudo-R² metrics would be needed for a comparable goodness-of-fit 
-            assessment in that framework.</p>
-        <h2>📈 Key Insights</h2>
-        <ol style="font-size: 24px;">
-            <li>Work experience showed a positive relationship with annual salary</li>
-            <li>Education level and job satisfaction contributed to salary variation</li>
-            <li>Developers’ perceptions of AI as a threat were influenced by professional and demographic factors</li>
-            <li>Statistical modeling provided insights into compensation trends within the tech industry</li>
-        </ol>
-        <h2>🛠️ Tools & Technologies</h2>
-        <ol style="font-size: 24px;">
-            <li>R</li>
-            <li>dplyr</li>
-            <li>ggplot2</li>
-            <li>tidyr</li>
-            <li>broom</li>
-            <li>gtsummary</li>
-            <li>performance</li>
-            <li>Statistical Modeling & Hypothesis Testing</li>
-        </ol>
-     
+    <h1>Global Health and Immunization Intelligence Dashboard</h1>
+    <p style="font-size: 24px;">This project combines SQL analytics, interactive data visualization, 
+        and machine learning to explore how immunization coverage, mortality rates, disease burden, 
+        and socioeconomic conditions influence life expectancy across countries and regions. 
+        Using global public health datasets, the project analyzes key indicators such as Polio, 
+        Hepatitis B, and Diphtheria vaccination coverage, infant and adult mortality, HIV incidence, 
+        GDP per capita, schooling, and life expectancy to identify health disparities, 
+        vulnerable populations, and emerging public health risks.</p>
+    <h2>1. SQL Data Analysis & Transformation</h2>
+    <p>
+        Using SQL Server Management Studio, the raw datasets were cleaned, transformed, and analyzed to generate 
+        meaningful public health insights. SQL queries were used to perform data validation, create health risk 
+        classifications, calculate vaccination and mortality trends, and prepare optimized views for reporting and 
+        visualization. The analysis focused on identifying relationships between vaccination coverage, mortality
+         rates, economic development, and population health outcomes.
+    </p>
+    <h2>2. Interactive Power BI Dashboard</h2>
+    <p>
+        An interactive dashboard was developed in Power BI to visualize global health patterns and support 
+        data-driven decision-making. The dashboard includes regional health comparisons, vaccination coverage trends,
+         mortality analysis, socioeconomic indicators, and risk intelligence monitoring. Users can explore high-risk 
+         countries, compare developed and developing economies, and analyze how healthcare access and immunization 
+         performance impact life expectancy over time.
+    </p>
+    <h2>3. Predictive Modeling with Scikit-learn</h2>
+    <p>
+        To extend the analysis, a machine learning regression model was developed using Scikit-learn to predict 
+        life expectancy based on health, vaccination, and socioeconomic indicators. Models including Linear 
+        Regression and Random Forest Regressor were trained and evaluated using metrics such as R² Score, MAE, 
+        and RMSE. Feature importance analysis revealed the strongest predictors of life expectancy, providing 
+        deeper insight into the factors that most significantly influence global health outcomes.
+
+    </p>
+    <h1> Correlation Analysis Result</h1>
+    <p> The following correlation analysis was run to examine the connection between various variable in the dataset</p>
+    <h2> Correlation Analysis: Life Expectancy, GDP per Capita, and Schooling</h2>
+    <p>A correlation analysis was conducted to examine the relationship between life expectancy, economic conditions, and education levels across countries. The results revealed a strong positive correlation between schooling and life expectancy (r = 0.73), indicating that countries with higher levels of education generally experience longer average life expectancy. This suggests that access to education may contribute to improved health awareness, healthcare utilization, and overall living conditions.
+    The analysis also showed a moderate positive correlation between GDP per capita and life expectancy (r = 0.58), implying that countries with stronger economic performance tend to have better health outcomes and longer survival rates. Similarly, GDP per capita and schooling demonstrated a moderate positive relationship (r = 0.58), suggesting that economically developed countries often have higher educational attainment levels.
+    <br> Overall, the findings highlight the important role of socioeconomic development and education in influencing population health outcomes and improving life expectancy globally.
+    </p>
+    <h2>Correlation Analysis: Polio Vaccination Coverage and Mortality Indicators</h2>
+    <p>A correlation analysis was performed to examine the relationship between polio vaccination coverage and key mortality indicators, including infant deaths, under-five deaths, and adult mortality. The results showed strong negative correlations between polio vaccination coverage and both infant deaths (r = -0.74) and under-five deaths (r = -0.74). This indicates that countries with higher polio immunization coverage generally experience lower child mortality rates, highlighting the critical role of vaccination programs in improving child survival outcomes.
+    Polio vaccination coverage also demonstrated a moderate negative correlation with adult mortality (r = -0.52), suggesting that stronger healthcare systems and immunization performance may contribute to broader improvements in population health. Additionally, infant deaths and under-five deaths showed an extremely strong positive correlation (r = 0.99), reflecting the close relationship between these two child mortality indicators. Both indicators also showed strong positive correlations with adult mortality, indicating that countries with poor child health outcomes often experience higher overall mortality levels.
+    <br> Overall, the analysis emphasizes the significant association between immunization coverage and reduced mortality, reinforcing the importance of vaccination programs and healthcare access in improving public health outcomes.
+    </p>
+    <h2>Correlation Analysis: HIV Incidence, Alcohol Consumption, and Adult Mortality</h2>
+    <p>A correlation analysis was conducted to evaluate the relationship between HIV incidence, alcohol consumption, and adult mortality across countries. The results revealed a strong positive correlation between HIV incidence and adult mortality (r = 0.70), indicating that countries with higher rates of HIV infections tend to experience significantly higher levels of adult mortality. This finding reflects the substantial impact of infectious diseases on population health and survival outcomes, particularly in regions with limited healthcare access and treatment coverage.
+    Alcohol consumption showed a very weak negative correlation with HIV incidence (r = -0.03), suggesting little to no direct relationship between the two variables within the dataset. Additionally, alcohol consumption demonstrated a weak negative correlation with adult mortality (r = -0.24), indicating that alcohol consumption alone may not be a strong predictor of mortality outcomes when compared with major health burdens such as HIV.
+    <br> Overall, the analysis highlights HIV incidence as a major factor associated with increased adult mortality, reinforcing the importance of disease prevention, treatment access, and public health interventions in improving adult survival rates globally.
+    </p>
+
 
 
 <!-- Scripts -->
