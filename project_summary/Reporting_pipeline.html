@@ -98,9 +98,13 @@
 <header>
   <h1>Nnamdi Stanley</h1>
   <nav>
+    <ul class="links"></ul>
     <a href="#about">About</a>
-    <a href="/Nnamdi_portfolio.github.io/index.html">Projects</a>
     <a href="#contact">Contact</a>
+    <a class="active"><a href="#index.html">Projects</a>
+							<!-- <li><a href="generic.html">Generic Page</a></li>
+							<li><a href="elements.html">Elements Reference</a></li> -->
+		</ul>
   </nav>
 </header>
 
@@ -110,42 +114,43 @@
 </section>
 
 <section id="about" class="container">
- <h1>Global Health and Immunization Intelligence Dashboard</h1>
-    <p style="font-size: 24px;">.</p>
-    <h2>1. </h2>
-    <p></p>
+ <h1>Automated Public Health Reporting Pipeline (Python + DHIS2)</h1>
+    <p style="font-size: 24px;"></p>
+    <h2>Project Structure </h2>
+    <p>
+      APHRP/
+      <br>│
+      <br>├── data/
+      <br>│   ├── raw/
+      <br>│   ├── processed/
+      <br>│   └── failed/
+      <br>│
+      <br>├── logs/
+      <br>│
+      <br>├── mappings/
+      <br>│   ├── facility_mapping.csv
+      <br>│   └── dataelement_mapping.csv
+      <br>│
+      <br>├── etl/
+      <br>│   ├── extract.py
+      <br>│   ├── validate.py
+      <br>│   ├── transform.py
+      <br>│   ├── load.py
+      <br>│   └── report.py
+      <br>│
+      <br>├── database/
+      <br>│   ├── db.py
+      <br>│   └── schema.sql
+      <br>│
+      <br>├── config/
+      <br>│   └── settings.py
+      <br>│
+      <br>├── main.py
+      <br>├── requirements.txt
+      <br>├── .env
+      <br>└── README.md</p>
     <div>
-	<h2>2. Interactive Power BI Dashboard</h2>
-    <p></p>
-	<div class="image-container">
-  		<img src="#" alt="First Image">
-  		<img src="#" alt="Second Image">
-	</div>
 	
-    <h2>3. </h2>
-    <p></p>
-	<div class="image-container">
-  		<img src="#" alt="First Image">
-  		
-	</div>
-    <h1></h1>
-    <p> </p>
-	<div class="image-container">
-  		<img src="#" alt="First Image">
-	</div>
-    <h2></h2>
-    <p><div class="image-container">
-  		<img src="/Nnamdi_portfolio.github.io/images/Polio_cor2.jpg" alt="Second Image">
-	</div>
-    <h2>Correlation Analysis: HIV Incidence, Alcohol Consumption, and Adult Mortality</h2>
-    <p>A correlation analysis was conducted to evaluate the relationship between HIV incidence, alcohol consumption, and adult mortality across countries. The results revealed a strong positive correlation between HIV incidence and adult mortality (r = 0.70), indicating that countries with higher rates of HIV infections tend to experience significantly higher levels of adult mortality. This finding reflects the substantial impact of infectious diseases on population health and survival outcomes, particularly in regions with limited healthcare access and treatment coverage.
-    Alcohol consumption showed a very weak negative correlation with HIV incidence (r = -0.03), suggesting little to no direct relationship between the two variables within the dataset. Additionally, alcohol consumption demonstrated a weak negative correlation with adult mortality (r = -0.24), indicating that alcohol consumption alone may not be a strong predictor of mortality outcomes when compared with major health burdens such as HIV.
-    <br> Overall, the analysis highlights HIV incidence as a major factor associated with increased adult mortality, reinforcing the importance of disease prevention, treatment access, and public health interventions in improving adult survival rates globally.
-    </p>
-	
-	<div class="image-container">
-		<img src="/Nnamdi_portfolio.github.io/images/Polio_cor3.jpg" alt="Third Image">
-	</div>
 </section>
 
 <!-- <section id="projects" class="container">
